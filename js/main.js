@@ -37,3 +37,42 @@ function initCountdown() {
 
 // Initialize countdown when DOM is loaded
 document.addEventListener('DOMContentLoaded', initCountdown);
+
+// NAV 
+const navCenter = document.querySelector('.navigation-bar-container');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 75) {
+    navCenter.classList.add('scrolled');
+  } else {
+    navCenter.classList.remove('scrolled');
+  }
+});
+
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  
+  // Toggle hamburger to X
+  const icon = menuBtn.querySelector('i');
+  if (mobileMenu.classList.contains('active')) {
+    icon.classList.remove('bi-list');
+    icon.classList.add('bi-x');
+  } else {
+    icon.classList.remove('bi-x');
+    icon.classList.add('bi-list');
+  }
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    const icon = menuBtn.querySelector('i');
+    icon.classList.remove('bi-x');
+    icon.classList.add('bi-list');
+  });
+});
+

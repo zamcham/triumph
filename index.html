@@ -47,10 +47,64 @@
   <link rel="stylesheet" href="./css/carousel.css" />
   <link rel="stylesheet" href="./css/endSection.css" />
   <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
 </head>
 
-<body>
+<body class="position-relative">
+  <nav class="navigation-bar-container">
+    <div class="navigation-bar">
+      <!-- Left -->
+      <img
+        src="/assets/brand/logoWhite.svg"
+        alt="Rock Solid Church Logo"
+        class="nav-logo"
+      />
 
+      <!-- Center (desktop) -->
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li><a href="#">Plan A Visit</a></li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Connect</a></li>
+          <li><a href="#">Ministries</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+
+        <button class="nav-btn give-btn">Give Online</button>
+
+        <button class="nav-btn menu-btn" aria-label="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <!-- Right (desktop) -->
+      <div class="nav-user">
+        <i class="bi bi-person"></i>
+        <span>Create account</span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#">Plan A Visit</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Ministries</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Media</a></li>
+      </ul>
+      <div>
+        <button class="nav-btn give-btn mobile-give-btn">Give Online</button>
+        <div class="mobile-user">
+          <i class="bi bi-person"></i>
+          <span>Create account</span>
+        </div>
+      </div>
+
+    </div>
+  </nav>
   <div class="page-wrapper">
     <main>
       <!-- HERO -->
@@ -77,7 +131,7 @@
 
         <!-- Bottom bar with countdown and social icons -->
         <div class="hero-bottom-bar px-4">
-          <div class="w-1-3"></div>
+          <div class="w-1-3 d-none d-md-block"></div>
 
           <div class="w-1-3 hero-countdown">
             <span class="countdown-text">Next Service Starts In:</span>

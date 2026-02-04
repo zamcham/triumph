@@ -17,14 +17,6 @@
   justify-content: center;
 }
 
-/* Dark overlay so text is readable */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-}
-
 /* Content sits above overlay */
 .hero-content {
   position: relative;
@@ -79,10 +71,10 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: transparent;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  border: none;
+  backdrop-filter: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,8 +84,9 @@
 }
 
 .hero-social-icons .social-icon:hover {
-  background: #fff;
-  color: #000;
+  background: transparent;
+  color: #ED4B1E;
+  transform: translateY(-2px);
 }
 
 /* Headline */
@@ -195,19 +188,54 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+  .hero {
+    border-radius: 24px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .hero-content {
+    padding: 0 16px;
+  }
+
   .hero-bottom-bar {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
+
+  .countdown-text {
+    width: 100%;
+    text-align: center;
+  }
   
   .hero-countdown {
+    width: 100%;
+    text-align: center;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
   
   .hero-countdown .countdown-timer {
+    width: 100%;
     font-size: 1.5rem;
+  }
+
+  .hero-social-icons {
+    width: 100%;
+    justify-content: center;
   }
 }
