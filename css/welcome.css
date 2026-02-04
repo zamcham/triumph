@@ -30,3 +30,20 @@
   margin-top: 24px;
   border-radius: 24px;
 }
+
+@media (max-width: 768px) {
+  .welcome-section {
+    margin: 50px auto;
+    padding: 0 16px;
+  }
+
+  .welcome-section .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .welcome-section .content > * {
+    width: 100%;
+  }
+}
