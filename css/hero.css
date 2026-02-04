@@ -8,7 +8,7 @@
   border-radius: 48px;
   overflow: hidden;
   color: #000000;
-  background-image: url('/assets/heroImage.webp');
+  background-image: url('../assets/heroImage.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
