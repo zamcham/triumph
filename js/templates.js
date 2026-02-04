@@ -2,18 +2,39 @@ import { volunteerCards } from "./data/carouselData.js";
 import { iconCardsList } from "./data/missionIconCardsData.js";
 
 
-/*  Volunteer Carousel */
+/* Mission Icon Cards */
+const iconCardTemplate = document.getElementById('icon-card-template');
+const iconCardsContainer = document.getElementById('iconCardsContainer');
+
+for (let i = 0; i < iconCardsList.length; i += 1) {
+  const iconCard = iconCardTemplate.content.cloneNode(true);
+  
+  const card = iconCardsList[i];
+  iconCard.querySelector('img').src = card.icon;
+  iconCard.querySelector('img').alt = card.title;
+  iconCard.querySelector('h3').textContent = card.title;
+  iconCard.querySelector('p').textContent = card.description;
+  iconCard.querySelector('a').textContent = card.linkText;
+  iconCard.querySelector('a').href = card.linkUrl;
+  
+  iconCardsContainer.appendChild(iconCard);
+}
+
+
+/* Volunteer Carousel */
+const volunteerCardTemplate = document.getElementById('volunteer-card-template');
 const wrapper = document.getElementById("volunteerSwiperWrapper");
 
 volunteerCards.forEach(card => {
-  const slide = document.createElement("div");
-  slide.className = "swiper-slide volunteer-card";
-
-  slide.innerHTML = `
-    <img src="${card.image}" alt="${card.alt}">
-    <p>${card.title}</p>
-  `;
-
+  // Clone the template
+  const slide = volunteerCardTemplate.content.cloneNode(true);
+  
+  // Fill in the details
+  slide.querySelector('img').src = card.image;
+  slide.querySelector('img').alt = card.alt;
+  slide.querySelector('.volunteer-name').textContent = card.title; // Changed this line
+  
+  // Append to wrapper
   wrapper.appendChild(slide);
 });
 
@@ -30,26 +51,3 @@ new Swiper(".volunteer-swiper", {
     1200: { slidesPerView: 7 }
   }
 });
-
-
-/*  Mission Icon Cards */
-const iconCardTemplate = document.getElementById('icon-card-template');
-const iconCardsContainer = document.getElementById('iconCardsContainer');
-
-// Loop through the iconCardsList and generate cards
-for (let i = 0; i < iconCardsList.length; i += 1) {
-  // Clone the template
-  const iconCard = iconCardTemplate.content.cloneNode(true);
-  
-  // Fill in the details
-  const card = iconCardsList[i];
-  iconCard.querySelector('img').src = card.icon;
-  iconCard.querySelector('img').alt = card.title;
-  iconCard.querySelector('h3').textContent = card.title;
-  iconCard.querySelector('p').textContent = card.description;
-  iconCard.querySelector('a').textContent = card.linkText;
-  iconCard.querySelector('a').href = card.linkUrl;
-  
-  // Append to container
-  iconCardsContainer.appendChild(iconCard);
-}

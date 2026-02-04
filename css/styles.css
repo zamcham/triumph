@@ -10,6 +10,7 @@ body {
   background-color: #FCFCFC;
   padding: 16px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 /* Helper Classes */
@@ -124,4 +125,16 @@ body {
 .custom-icon {
   width: 80px;
   height: 80px;
+}
+
+.custom-line {
+  right: -75px;
+  bottom: 50%;
+}
+
+@media (max-width: 768px) {
+  .accent-message {
+    width: 100%;
+    font-size: 32px;
+  }
 }

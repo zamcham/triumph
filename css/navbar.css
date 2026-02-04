@@ -117,7 +117,7 @@
 
 /* Mobile Menu */
 .mobile-menu {
-  display: none;
+  display: none; 
   position: fixed;
   top: 0px;
   left: 0;
@@ -129,11 +129,13 @@
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 999;
+  pointer-events: none;
 }
 
 .mobile-menu.active {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto; 
 }
 
 .mobile-nav-links {

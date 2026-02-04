@@ -1,7 +1,7 @@
 export const volunteerCards = [
   {
     image: "/assets/carousel/jewish.jpg",
-    title: "Community Outreach",
+    title: "Jews",
     alt: "Jewish person in a church"
   },
   {

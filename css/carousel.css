@@ -25,7 +25,22 @@
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
-.volunteer-card:hover p {
-  color: #c1121f; /* brand red */
+.caret-icon {
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.volunteer-card:hover {
   transform: translateY(-2px);
+}
+
+.volunteer-card:hover p {
+  color: #c1121f; 
+}
+
+.volunteer-card:hover .caret-icon {
+  opacity: 1;
 }

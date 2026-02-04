@@ -46,4 +46,8 @@
   .welcome-section .content > * {
     width: 100%;
   }
+
+  .welcome-section .content .descriptive-paragraph {
+    text-align: left;
+  }
 }
