@@ -1,3 +1,15 @@
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .navigation-bar-container {
     width: 100%;
     max-width: 100vw;
@@ -12,12 +24,14 @@
     transition: all 0.3s ease, border 0.3s ease;
     background: transparent;
     border-bottom: 1px solid transparent;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .navigation-bar-container.scrolled {
-  padding-top: 0;
-  background: #2E2320;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(46, 35, 32, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navigation-bar {
@@ -49,6 +63,15 @@
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
+  
+  transition: all 0.3s ease;
+}
+
+.navigation-bar-container.scrolled .nav-center {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-links {
@@ -89,6 +112,13 @@
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.give-btn:hover {
+  background: #ED4B1E;
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .menu-btn {
@@ -97,11 +127,22 @@
   border-radius: 50%;
   background: #ffffff;
   color: #000;
+  transition: all 0.3s ease;
 }
 
 .menu-btn img {
   width: 18px;
   height: 18px;
+}
+
+.menu-btn:hover {
+  background: #ED4B1E;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.menu-btn:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .nav-user {
@@ -112,6 +153,11 @@
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-user:hover {
+  color: #ff8969;
 }
 
 

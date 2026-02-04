@@ -54,11 +54,13 @@
   <nav class="navigation-bar-container">
     <div class="navigation-bar">
       <!-- Left -->
-      <img
-        src="/assets/brand/logoWhite.svg"
-        alt="Rock Solid Church Logo"
-        class="nav-logo"
-      />
+      <a href="/">
+        <img
+          src="/assets/brand/logoWhite.svg"
+          alt="Rock Solid Church Logo"
+          class="nav-logo"
+        />
+      </a>
 
       <!-- Center (desktop) -->
       <div class="nav-center">
@@ -241,32 +243,43 @@
       </section>
 
       <!-- END SECTION -->
-       <section class="end-section bg-brand-dark overflow-hidden">
-        <div class="boxed-container d-flex">
+      <section class="end-section bg-brand-dark overflow-hidden">
+        <div class="boxed-container d-md-flex main-final-content">
           <div class="end-content-column">
             <h2 class="secondary-heading text-white text-start">Saved Lives Are Changed Lives.</h2>
-            <p class="descriptive-paragraph text-white text-start">Feature stories about how Rock Solid Church is making a difference in our city.</p>
+            <p class="descriptive-paragraph text-white text-start mb-3">Feature stories about how Rock Solid Church is making a difference in our city.</p>
             <a class="btn-default bg-brand-red text-white">Share Your Story</a>
           </div>
           <div class="d-flex end-buttons-column">
-            <div class="w-2-3 mr-5">
-              <img src="/assets/joshua.jpg" alt="" class="w-full button-image"/>
-              <p class="button-name"> Joushua's road to peace</p>
+            <div class="w-2-3 mr-5 featured-story-button-wrapper">
+              <a href="#" class="story-button">
+                <div class="button-image-wrapper">
+                  <img src="/assets/joshua.jpg" alt="" class="w-full button-image"/>
+                </div>
+                <p class="button-name">Joshua's road to peace</p>
+              </a>
             </div>
-            <div class="d-flex flex-column w-1-3 position-relative">
+            <div class="d-flex flex-column w-1-3 position-relative more-stories-column">
               <div class="r-column">
-                <img src="/assets/byAnyMeans.jpg" alt="" class="w-full button-image"/>
-                <p class="button-name"> By any means necessary</p>
+                <a href="#" class="story-button">
+                  <div class="button-image-wrapper">
+                    <img src="/assets/byAnyMeans.jpg" alt="" class="w-full button-image"/>
+                  </div>
+                  <p class="button-name">By any means necessary</p>
+                </a>
               </div>
               <div class="r-column">
-                <img src="/assets/holdingHope.jpg" alt="" class="w-full button-image"/>
-                <p class="button-name"> Holding on to hope</p>
+                <a href="#" class="story-button">
+                  <div class="button-image-wrapper">
+                    <img src="/assets/holdingHope.jpg" alt="" class="w-full button-image"/>
+                  </div>
+                  <p class="button-name">Holding on to hope</p>
+                </a>
               </div>
             </div>
-
           </div>
         </div>
-       </section>
+      </section>
 
 
     </main>

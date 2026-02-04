@@ -13,19 +13,127 @@
 
 .end-buttons-column {
     width: 70%;
+    max-height: 550px;
     gap: 50px;
+}
+
+
+.story-button {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.button-image-wrapper {
+    border-radius: 16px;
+    overflow: hidden; 
+    border: 2px solid #2E2320;
+    box-sizing: border-box;
 }
 
 .button-image {
     border-radius: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    transform: scale(1.01); 
+}
+
+.story-button:hover .button-image {
+    transform: scale(1.1); 
+}
+
+.story-button:hover .button-name {
+    color: #ED4B1E;
 }
 
 .button-name {
     color: white;
     margin-top: 10px;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .r-column {
     height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-column:first-child {
+    margin-bottom: 50px;
+}
+
+.r-column .button-image {
+    flex: 1;
+    min-height: 0;
+    max-height: 185px;
+}
+
+.featured-story-button-wrapper {
+    height: fit-content;
+}
+
+.more-stories-column {
+    max-height: 550px;
+}
+
+@media (max-width: 768px) {
+
+    .end-section {
+        border-radius: 24px;
+        padding: 60px 20px;
+    }
+
+  .end-content-column {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .end-content-column .secondary-heading, .end-content-column .descriptive-paragraph{
+    text-align: center !important;
+  }
+
+  .end-buttons-column {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .featured-story-button-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .featured-story-button-wrapper, .more-stories-column {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .more-stories-column, .end-buttons-column{
+    height: fit-content;
+    max-height: none;
+  }
+
+  .r-column:first-child {
+    margin-bottom: 20px;
+  }
+
+  .r-column .button-image {
+    max-height: none;
+  }
+
+  .main-final-content {
+    height: fit-content;
+  }
+
+  .button-name {
+    text-align: center;
+  }
 }
