@@ -186,56 +186,107 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments */
+/* =========================
+   HERO ANIMATIONS
+========================= */
+
+/* Initial hidden state for animated elements */
+.hero-title .word,
+.hero-subtitle,
+.hero .btn-default,
+.hero .btn-about,
+.hero-countdown,
+.hero-social-icons {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Fade in + slide up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in animation (for bottom elements) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Word-by-word animation for title */
+.hero-title .word {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.hero-title .word:nth-child(1) { animation-delay: 0.1s; }
+.hero-title .word:nth-child(2) { animation-delay: 0.2s; }
+.hero-title .word:nth-child(3) { animation-delay: 0.3s; }
+.hero-title .word:nth-child(4) { animation-delay: 0.4s; }
+
+/* Subtitle appears after title words */
+.hero-subtitle {
+  animation: fadeInUp 0.6s ease-out 0.6s forwards;
+}
+
+/* Buttons stagger in */
+.hero .btn-default {
+  animation: fadeInUp 0.5s ease-out 0.9s forwards;
+}
+
+.hero .btn-about {
+  animation: fadeInUp 0.5s ease-out 1s forwards;
+}
+
+/* Bottom bar elements fade in */
+.hero-countdown {
+  animation: fadeIn 0.6s ease-out 1.2s forwards;
+}
+
+.hero-social-icons {
+  animation: fadeIn 0.6s ease-out 1.3s forwards;
+}
+
+/* Individual social icons stagger */
+.hero-social-icons .social-icon {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.hero-social-icons .social-icon:nth-child(1) {
+  animation-delay: 1.4s;
+}
+
+.hero-social-icons .social-icon:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.hero-social-icons .social-icon:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.hero-social-icons .social-icon:nth-child(4) {
+  animation-delay: 1.7s;
+}
+
 @media (max-width: 768px) {
-
-  .hero {
-    border-radius: 24px;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.45);
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  .hero-content {
-    padding: 0 16px;
-  }
-
   .hero-bottom-bar {
-    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
   }
-
   .countdown-text {
-    width: 100%;
     text-align: center;
-  }
-  
-  .hero-countdown {
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-  
-  .hero-countdown .countdown-timer {
-    width: 100%;
-    font-size: 1.5rem;
-  }
-
-  .hero-social-icons {
-    width: 100%;
-    justify-content: center;
   }
 }
