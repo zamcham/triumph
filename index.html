@@ -169,36 +169,31 @@
         <img src="/assets/welcomeImage.webp" alt="Welcome Image" class="welcome-image"/>
       </section>
 
+      <!-- Mission Cards Template -->
+      <template id="icon-card-template">
+        <div class="col-12 col-md-4">
+          <div class="icon-card">
+            <img src="" alt=""/>
+            <h3 class="text-center"></h3>
+            <p class="text-center"></p>
+            <a href="#" class="text-center"></a>
+          </div>
+        </div>
+      </template>
+
       <!-- MISSION -->
-        <section class="mission-section">
-          <img src="/assets/texture.webp" alt="Abstract decoration background" class="mission-background-image"/>
-          <div class="boxed-container z-2">
+      <section class="mission-section">
+        <img src="/assets/texture.webp" alt="Abstract decoration background" class="mission-background-image"/>
+        <div class="boxed-container z-2">
           <h2 class="text-white secondary-heading">Our Mission is simple</h2>
           <p class="text-white text-center"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that </p>
-          <div class="d-flex gap-4 icon-cards-container">
-            <div class="icon-card">
-              <img src="/assets/icons/play.svg" alt="Mission Image 1"/>
-              <h3>Watch a Message</h3>
-              <p>Catch up on the latest and past weekend service messages anytime, anywhere.</p>
-              <a href="#">Catch Our Latest Message</a>
-            </div>
-            <div class="icon-card">
-              <img src="/assets/icons/location.svg" alt="Mission Image 1"/>
-              <h3>Find a Location</h3>
-              <p>Easily find a campus near you. Join us in person and get connected.</p>
-              <a href="#">Search Our Campuses</a>
-            </div>
-            <div class="icon-card">
-              <img src="/assets/icons/message.svg" alt="Mission Image 1"/>
-              <h3>Get Connected</h3>
-              <p>Stay connected and in the loop—sign up for updates, events, and ways to get involved.</p>
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
+          
+          <!-- Grid Container -->
+          <div class="row g-4 icon-cards-container" id="iconCardsContainer"></div>
 
-          <div class="d-flex align-items-end gap-50">
-            <div class="w-1-2">
-              <h2 class="accent-text">GOSPEL</h2>
+          <div class="d-flex align-items-end gap-50 content">
+            <div class="w-1-2 content-heading">
+              <h2 class="accent-text opacity-75 text-white">GOSPEL</h2>
               <p class="accent-paragraph text-white">The gospel is what should characterize us. It should be our identity: We are a gospel people.</p>
             </div>
             <p class="descriptive-paragraph w-1-2 text-white">
@@ -206,8 +201,8 @@
             </p>
           </div>
           <img src="/assets/missionImage.webp" alt="Mission Image" class="mission-image"/>
-          </div>
-        </section>
+        </div>
+      </section>
 
       <!-- MIDDLE SECTION -->
       <section class="boxed-container my-5">
@@ -331,7 +326,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/js/volunteerCarousel.js"></script>
+  <script type="module" src="/js/templates.js"></script>
 
   <!-- Custom JS -->
   <script src="/js/main.js"></script>
