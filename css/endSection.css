@@ -1,0 +1,31 @@
+.end-section {
+  border-radius: 48px;
+  padding: 75px 0;
+}
+
+.end-section .boxed-container {
+  gap: 50px;
+}
+
+.end-content-column {
+    width: 30%;
+}
+
+.end-buttons-column {
+    width: 70%;
+    gap: 50px;
+}
+
+.button-image {
+    border-radius: 16px;
+}
+
+.button-name {
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.r-column {
+    height: 50%;
+}

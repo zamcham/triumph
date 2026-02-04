@@ -1,0 +1,31 @@
+.volunteer-swiper {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.volunteer-card {
+  cursor: grab;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.volunteer-card:active {
+  cursor: grabbing;
+}
+
+.volunteer-card img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.volunteer-card p {
+  margin-top: 12px;
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.volunteer-card:hover p {
+  color: #c1121f; /* brand red */
+  transform: translateY(-2px);
+}
