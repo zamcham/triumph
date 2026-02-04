@@ -22,7 +22,6 @@ function initCountdown() {
     if (timeRemaining > 0) {
       timeRemaining--;
     } else {
-      // When countdown reaches zero, you can reset or handle it differently
       clearInterval(countdownInterval);
       countdownElement.textContent = '00:00:00';
     }
@@ -76,3 +75,18 @@ document.querySelectorAll('.mobile-nav-links a').forEach(link => {
   });
 });
 
+// Animation observer
+const observerOptions = {
+  threshold: 0.2,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));

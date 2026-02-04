@@ -17,7 +17,6 @@
   justify-content: center;
 }
 
-/* Content sits above overlay */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -123,6 +122,15 @@
 .btn-about:hover {
   background: rgba(251, 251, 251, 0.35);
   color: #fff;
+}
+
+.hero-button {
+  transition: all 0.3s ease !important;
+}
+
+.hero-button:hover {
+  background-color: #ED4B1E !important;
+  color: #fff !important;
 }
 
 /* Countdown Section */

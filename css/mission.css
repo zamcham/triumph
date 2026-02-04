@@ -42,7 +42,13 @@
 .icon-card a {
     color: #EB3300;
     font-weight: 600;
-    text-emphasis: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.icon-card a:hover {
+    color: #FF6B35;
+    transform: translateX(4px);
 }
 
 .mission-image {
