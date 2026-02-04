@@ -32,7 +32,7 @@ volunteerCards.forEach(card => {
   // Fill in the details
   slide.querySelector('img').src = card.image;
   slide.querySelector('img').alt = card.alt;
-  slide.querySelector('.volunteer-name').textContent = card.title; // Changed this line
+  slide.querySelector('.volunteer-name').textContent = card.title;
   
   // Append to wrapper
   wrapper.appendChild(slide);
