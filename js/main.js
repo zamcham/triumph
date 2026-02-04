@@ -59,9 +59,15 @@ menuBtn.addEventListener('click', () => {
   if (mobileMenu.classList.contains('active')) {
     icon.classList.remove('bi-list');
     icon.classList.add('bi-x');
+
+    // Disable body scroll
+    document.body.style.overflow = 'hidden';
   } else {
     icon.classList.remove('bi-x');
     icon.classList.add('bi-list');
+
+    // Enable body scroll
+    document.body.style.overflow = '';
   }
 });
 
@@ -72,6 +78,9 @@ document.querySelectorAll('.mobile-nav-links a').forEach(link => {
     const icon = menuBtn.querySelector('i');
     icon.classList.remove('bi-x');
     icon.classList.add('bi-list');
+
+    // Re-enable body scroll
+    document.body.style.overflow = '';
   });
 });
 
