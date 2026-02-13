@@ -63,6 +63,11 @@ a {
   background-color: #EB3300;  
 }
 
+.text-50w {
+  width: 50%;
+  margin: auto;
+}
+
 /* UI Elements */
 .btn-default {
   font-weight: 700;
@@ -84,8 +89,32 @@ a {
   width: 55px;
 }
 
+.arrow-down-icon {
+  position: absolute;          
+  top: -50%;                      
+  left: 50%;                   
+  transform: translateX(-50%); 
+  z-index: 3;                  
+  font-size: 2.5rem;           
+  height: 1.5rem;              
+}
+
+.texture-right {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  z-index: 0;
+}
+
+.texture-left {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: 0;
+}
+
 .boxed-container {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
   position: relative;
 }
@@ -125,7 +154,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  font-size: 50px;
+  font-size: 47px;
   line-height: 100%;
 }
 
@@ -136,7 +165,7 @@ a {
 
 .custom-line {
   right: -75px;
-  bottom: 50%;
+  bottom: 60%;
 }
 
 .animate-on-scroll {
@@ -189,6 +218,23 @@ a {
   .accent-message {
     width: 100%;
     font-size: 32px;
+  }
+
+  .text-50w {
+    width: 100%;
+  }
+
+  .custom-line {
+    right: -30px;
+    bottom: 52%;
+  }
+
+  .texture-left {
+    left: -140%;
+  }
+
+  .texture-right {
+    right: -140%;
   }
 }
 
