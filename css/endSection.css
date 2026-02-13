@@ -25,6 +25,10 @@
     transition: all 0.3s ease;
 }
 
+.bottom-sb {
+    margin-top: -20px;
+}
+
 .button-image-wrapper {
     border-radius: 16px;
     overflow: hidden; 
@@ -48,6 +52,7 @@
 
 .story-button:hover .button-name {
     color: #ED4B1E;
+    text-decoration: underline;
 }
 
 .button-name {
