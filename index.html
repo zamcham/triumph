@@ -114,31 +114,33 @@
 
     </div>
   </nav>
-  <div class="page-wrapper">
+
     <main>
+      <div class="overflow-hidden">
       <!-- HERO -->
-      <section class="hero position-relative">
+      <section class="mx-2 my-2 mx-md-4 my-md-0">
+        <div class="hero position-relative">
         <div class="container hero-content mx-auto text-center">
-        <h1 class="hero-title mb-2">
-          <span class="word">We're</span>
-          <span class="word">Glad</span>
-          <span class="word">You're</span>
-          <span class="word">Here</span>
-        </h1>
+          <h1 class="hero-title mb-2">
+            <span class="word">We're</span>
+            <span class="word">Glad</span>
+            <span class="word">You're</span>
+            <span class="word">Here</span>
+          </h1>
 
-          <p class="hero-subtitle mb-4">
-            We are a thriving and diverse community of real people
-            experiencing real life together.
-          </p>
+            <p class="hero-subtitle mb-4">
+              We are a thriving and diverse community of real people
+              experiencing real life together.
+            </p>
 
-          <div class="d-flex gap-3 flex-wrap justify-content-center mb-5">
-            <a href="#visit" class="btn-default hero-button bg-white text-black">
-              Plan a Visit
-            </a>
-            <a href="#about" class="btn btn-about">
-              About Us
-            </a>
-          </div>
+            <div class="d-flex gap-3 flex-wrap justify-content-center mb-5">
+              <a href="#visit" class="btn-default hero-button bg-white text-black">
+                Plan a Visit
+              </a>
+              <a href="#about" class="btn btn-about">
+                About Us
+              </a>
+            </div>
         </div>
 
         <!-- Bottom bar with countdown and social icons -->
@@ -165,16 +167,17 @@
             </a>
           </div>
         </div>
+        </div>
       </section>
 
       <!-- WELCOME -->
       <section class="welcome-section boxed-container">
-        <div class="d-flex align-items-end gap-50 content animate-on-scroll">
+        <div class="d-flex align-items-end justify-content-between content animate-on-scroll gap-50">
           <div class="w-1-2">
             <h2 class="accent-text">WELCOME TO ROCK SOLID</h2>
-            <p class="accent-paragraph text-black">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</p>
+            <p class="accent-paragraph text-black m-w-550">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</p>
           </div>
-          <p class="descriptive-paragraph w-1-2">
+          <p class="descriptive-paragraph w-1-2 m-w-450">
             Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.
           </p>
         </div>
@@ -194,57 +197,61 @@
       </template>
 
       <!-- MISSION -->
-      <section class="mission-section relative overflow-hidden z-3">
-        <img src="./assets/texture.webp" alt="Abstract decoration background" class="mission-background-image"/>
-        <div class="position-absolute top-0 start-50 translate-middle-x">
-          <div class="position-relative d-inline-block">
-            <i class="bi bi-arrow-down-short arrow-down-icon"></i>
-            <img 
-              src="./assets/ui/decoration.svg" 
-              alt="White decoration foreground"
-              class="d-block"
-            />
-          </div>
-        </div>
-        <div class="boxed-container z-2">
-          <h2 class="text-white secondary-heading animate-on-scroll">Our Mission is simple</h2>
-          <p class="text-white text-center animate-on-scroll delay-1 m-auto text-50w"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that </p>
-          
-          <!-- Grid Container -->
-          <div class="row g-4 icon-cards-container animate-on-scroll delay-2" id="iconCardsContainer"></div>
-
-          <div class="d-flex align-items-end gap-50 content animate-on-scroll space-up">
-            <div class="w-1-2 content-heading">
-              <h2 class="accent-text opacity-75 text-white">GOSPEL</h2>
-              <p class="accent-paragraph text-white">The gospel is what should characterize us. It should be our identity: We are a gospel people.</p>
+      <section class="mx-4">
+        <div class="mission-section relative z-3">
+          <img src="./assets/texture.webp" alt="Abstract decoration background" class="mission-background-image"/>
+          <div class="position-absolute top-0 start-50 translate-middle-x">
+            <div class="position-relative d-inline-block">
+              <i class="bi bi-arrow-down-short arrow-down-icon"></i>
+              <img 
+                src="./assets/ui/decoration.svg" 
+                alt="White decoration foreground"
+                class="d-block"
+              />
             </div>
-            <p class="descriptive-paragraph w-1-2 text-white">
-              <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life. 
-            </p>
           </div>
-          <img src="./assets/missionImage.webp" alt="Mission Image" class="mission-image animate-on-scroll"/>
+          <div class="boxed-container z-2">
+            <h2 class="text-white secondary-heading animate-on-scroll">Our Mission is simple</h2>
+            <p class="text-white text-center animate-on-scroll delay-1 m-auto text-50w"><strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that </p>
+            
+            <!-- Grid Container -->
+            <div class="row g-4 icon-cards-container animate-on-scroll delay-2" id="iconCardsContainer"></div>
+
+            <div class="d-flex align-items-end justify-content-between gap-50 content animate-on-scroll space-up">
+              <div class="w-1-2 content-heading">
+                <h2 class="accent-text opacity-75 text-white">GOSPEL</h2>
+                <p class="accent-paragraph text-white">The gospel is what should characterize us. It should be our identity: We are a gospel people.</p>
+              </div>
+              <p class="descriptive-paragraph m-w-450 text-white">
+                <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life. 
+              </p>
+            </div>
+            <img src="./assets/missionImage.webp" alt="Mission Image" class="mission-image animate-on-scroll"/>
+          </div>
         </div>
       </section>
 
       <!-- MIDDLE SECTION -->
-      <section class="boxed-container my-5">
-        <span class="deco-line bg-black position-absolute top-0 start-0"></span>
+      <section class="position-relative px-4 pt-120">
+        <span class="deco-line bg-black position-absolute top-0 start-4 mt-120"></span>
         <span class="deco-line bg-black position-absolute rotate-90 custom-line"></span>
         <img src="./assets/ui/texture.png" alt="Abstract textured background" class="texture-right"/>
         <img src="./assets/ui/texture.png" alt="Abstract textured background" class="texture-left"/>
 
-        <div class="d-flex flex-column align-items-center text-center gap-4 py-5 animate-on-scroll z-3">
-          <h2 class="accent-message">
-            Rock Solid CHurch continues to hold out <span class="text-brand-red">love</span> <span class="text-brand-gray">and Hope to the entire world.</span>
-          </h2>
-          <a class="btn-default bg-brand-dark text-white">
-            Plan a Visit
-          </a>
-        </div>
-        <div class="d-flex flex-column justify-content-center align-items-center mt-md-5 animate-on-scroll delay-1 z-3">
-          <img src="./assets/icons/handshake.svg" alt="Handshake Icon" class="custom-icon"/>
-          <h2 class="secondary-heading text-black">Find a place to volunteer</h2>
-          <p class="descriptive-paragraph w-1-3 text-center">Explore our ministries—find your place, grow in faith, and connect with a vibrant community!</p>
+        <div class="boxed-container pt-120 my-5">
+          <div class="d-flex flex-column align-items-center text-center gap-4 py-5 animate-on-scroll z-3">
+            <h2 class="accent-message">
+              Rock Solid CHurch continues to hold out <span class="text-brand-red">love</span> <span class="text-brand-gray">and Hope to the entire world.</span>
+            </h2>
+            <a class="btn-default bg-brand-dark text-white">
+              Plan a Visit
+            </a>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center mt-120 animate-on-scroll delay-1 z-3">
+            <img src="./assets/icons/handshake.svg" alt="Handshake Icon" class="custom-icon"/>
+            <h2 class="secondary-heading text-black">Find a place to volunteer</h2>
+            <p class="descriptive-paragraph w-1-3 text-center">Explore our ministries—find your place, grow in faith, and connect with a vibrant community!</p>
+          </div>
         </div>
       </section>
 
@@ -266,62 +273,63 @@
         </div>
       </section>
 
-      <!-- TODO: Add animation, pause on hover (timer with indicator)-->
-
       <!-- ADDITIONAL RESOURCES SECTION -->
-      <section class="additional-resources-section overflow-hidden mb-5">
-        <div class="boxed-container">
-          <h2 class="secondary-heading text-center mb-5 text-black">Additional Resources</h2>
-          <div class="vertical-resources-slider bg-white">
-            <img src="./assets/resources/communityNights.png" class="resource-image" alt="Community Nights">
-            <div class="option-list">
-              <a class="option-card active" href="#">
-                <div class="progress-ring">
-                  <svg width="24" height="24">
-                    <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
-                    <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
-                  </svg>
-                </div>
-                <h3>Community Nights</h3>
-                <p>
-                  Join us for Community Night—gather, grow, and dive into God’s Word together with others!
-                </p>
-                <div class="text-brand-red option-cta">Learn More</div>
-              </a>
-              <a class="option-card" href="#">
-                <div class="progress-ring">
-                  <svg width="24" height="24">
-                    <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
-                    <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
-                  </svg>
-                </div>
-                <h3>Give Online</h3>
-                <p>
-                  Give online today and make a lasting impact—your generosity helps change lives near and far!
-                </p>
-                <div class="text-brand-red option-cta">Make an Impact Generously</div>
-              </a>
-              <a class="option-card" href="#">
-                <div class="progress-ring">
-                  <svg width="24" height="24">
-                    <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
-                    <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
-                  </svg>
-                </div>
-                <h3>Connect With Us</h3>
-                <p>
-                  Have questions, need prayer, or info? Connect with us—we’re here for you!
-                </p>
-                <div class="text-brand-red option-cta">Contact Us</div>
-              </a>
+      <section class="mx-4">
+        <div class="additional-resources-section overflow-hidden mb-5">
+          <div class="boxed-container">
+            <h2 class="secondary-heading text-center mb-5 text-black">Additional Resources</h2>
+            <div class="vertical-resources-slider bg-white">
+              <img src="./assets/resources/communityNights.png" class="resource-image" alt="Community Nights">
+              <div class="option-list">
+                <a class="option-card active" href="#">
+                  <div class="progress-ring">
+                    <svg width="24" height="24">
+                      <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
+                      <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
+                    </svg>
+                  </div>
+                  <h3>Community Nights</h3>
+                  <p>
+                    Join us for Community Night—gather, grow, and dive into God’s Word together with others!
+                  </p>
+                  <div class="text-brand-red option-cta">Learn More</div>
+                </a>
+                <a class="option-card" href="#">
+                  <div class="progress-ring">
+                    <svg width="24" height="24">
+                      <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
+                      <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
+                    </svg>
+                  </div>
+                  <h3>Give Online</h3>
+                  <p>
+                    Give online today and make a lasting impact—your generosity helps change lives near and far!
+                  </p>
+                  <div class="text-brand-red option-cta">Make an Impact Generously</div>
+                </a>
+                <a class="option-card" href="#">
+                  <div class="progress-ring">
+                    <svg width="24" height="24">
+                      <circle class="progress-bg" cx="12" cy="12" r="10"></circle>
+                      <circle class="progress-circle" cx="12" cy="12" r="10"></circle>
+                    </svg>
+                  </div>
+                  <h3>Connect With Us</h3>
+                  <p>
+                    Have questions, need prayer, or info? Connect with us—we’re here for you!
+                  </p>
+                  <div class="text-brand-red option-cta">Contact Us</div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- END SECTION -->
-      <section class="end-section bg-brand-dark overflow-hidden">
-        <div class="boxed-container d-md-flex main-final-content animate-on-scroll p-2">
+      <section class="mx-4">
+        <div class="end-section bg-brand-dark overflow-hidden">
+        <div class="boxed-container d-md-flex main-final-content animate-on-scroll">
           <div class="end-content-column">
             <h2 class="secondary-heading text-white text-start">Saved Lives Are Changed Lives.</h2>
             <p class="descriptive-paragraph text-white text-start mb-5">Feature stories about how Rock Solid Church is making a difference in our city.</p>
@@ -356,13 +364,14 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
-
+    </div>
     </main>
-  </div>
+    
 
-  <footer class="footer-main-container">
+  <footer class="footer-main-container mt-200">
     <div class="footer-container d-flex p-2">
       <div class="d-flex flex-column w-1-3 general-info">
         <img src="./assets/brand/logoDark.svg" alt="Rock Solid Church Logo" class="footer-logo"/>

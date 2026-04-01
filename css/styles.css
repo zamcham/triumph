@@ -101,20 +101,22 @@ a {
 
 .texture-right {
   position: absolute;
-  top: -50%;
-  right: -50%;
+  top: -70%;
+  right: -20%;
   z-index: 0;
+  opacity: 60%;
 }
 
 .texture-left {
   position: absolute;
   top: 0;
-  left: -50%;
+  left: -20%;
   z-index: 0;
+  opacity: 60%;
 }
 
 .boxed-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   position: relative;
 }
@@ -128,21 +130,21 @@ a {
 
 .accent-text {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 20px;
   color: #ABABAB;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
 .accent-paragraph {
-  font-size: clamp(1.5rem, 2.2vw, 1.75rem); 
+  font-size: 32px; 
   font-weight: 700;
   line-height: 35px;
   margin-bottom: 0;
 }
 
 .descriptive-paragraph {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #585858;
@@ -150,11 +152,11 @@ a {
 }
 
 .accent-message {
-  width: 70%;
+  width: 80%;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  font-size: 47px;
+  font-size: 60px;
   line-height: 100%;
 }
 
@@ -164,8 +166,8 @@ a {
 }
 
 .custom-line {
-  right: -75px;
-  bottom: 60%;
+  right: 0;
+  bottom: 30%;
 }
 
 .animate-on-scroll {
@@ -214,6 +216,21 @@ a {
   transition-delay: 0.6s;
 }
 
+.m-w-550 { max-width: 550px;}
+
+.pt-120 { padding-top: 120px; }
+
+.mt-120 {margin-top: 120px;}
+
+.mt-200 {margin-top: 200px;}
+
+@media(max-width: 1024px) {
+  .boxed-container{
+    padding: 0 24px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .accent-message {
     width: 100%;
@@ -225,8 +242,8 @@ a {
   }
 
   .custom-line {
-    right: -30px;
-    bottom: 52%;
+    right: 0;
+    bottom: 35%;
   }
 
   .texture-left {
@@ -237,4 +254,3 @@ a {
     right: -140%;
   }
 }
-

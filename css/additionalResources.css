@@ -93,6 +93,10 @@
         padding: 60px 20px;
    }
 
+   .additional-resources-section .boxed-container {
+    padding: 0;
+   }
+
     .vertical-resources-slider {
         grid-template-columns: 1fr;
     }

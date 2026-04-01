@@ -16,7 +16,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 16px;
+    padding-top: 45px;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@
 }
 
 .navigation-bar-container.scrolled {
+  padding-top: 0px;
   background: rgba(46, 35, 32, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -35,9 +36,8 @@
 }
 
 .navigation-bar {
-  max-width: 1440px;
   width: 100%;
-  padding: 12px 24px;
+  padding: 12px 75px;
 
   display: flex;
   align-items: center;
@@ -235,8 +235,13 @@
 
 
 @media (max-width: 1024px) {
+
+  .nav-logo {
+    height: 30px;
+  }
+
   .nav-center {
-    gap: 12px;
+    gap: 10px;
     padding: 7px 12px;
   }
   
@@ -245,6 +250,10 @@
   }
   
   .nav-links a {
+    font-size: 13px;
+  }
+
+  .mobile-give-btn {
     font-size: 13px;
   }
 }
